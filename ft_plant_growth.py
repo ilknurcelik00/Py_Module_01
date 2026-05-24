@@ -1,17 +1,17 @@
 class Plant:
-    def __init__(self, name, height, ages):
+    def __init__(self, name, height, ages) -> None:
         self.name = name
         self.height = height
         self.ages = ages
 
-    def show(self):
-        self.height = round(self.height, 1)
-        print(self.name, ":", self.height, "cm,", self.ages, "days old")
+    def show(self) -> None:
+        h = round(self.height, 1)
+        print(self.name + ":", str(h) + "cm,", self.ages, "days old")
 
-    def grow(self):
+    def grow(self) -> None:
         self.height = self.height + 0.8
 
-    def age(self):
+    def age(self) -> None:
         self.ages = self.ages + 1
 
 
